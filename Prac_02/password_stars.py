@@ -1,7 +1,3 @@
-
-
-
-
 MINIMUM_LENGTH = 8
 password = input("Password: ")
 while len(password) < MINIMUM_LENGTH:
