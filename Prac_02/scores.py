@@ -1,4 +1,4 @@
-"""CP1404 - Practical 1 - SCORES"""
+"""CP1404 - Practical 2 - SCORES"""
 import random
 
 
