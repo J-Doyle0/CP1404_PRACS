@@ -10,12 +10,10 @@ quick_picks = int(input("How many quick picks do you want? "))
 for picks in range(quick_picks):
     for i in range(NUMBER_OF_NUMBERS):
         counter = 0
-        # enumerate(NUMBER_OF_NUMBERS)
         number = random.randint(MINIMUM, MAXIMUM)
         while number in quick_list:
             number = random.randint(MINIMUM, MAXIMUM)
         quick_list.append(number)
         quick_list = sorted(quick_list)
-        # print(quick_list, end=' ')
     print(f"{quick_list}")
     quick_list.clear()
