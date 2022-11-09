@@ -4,6 +4,7 @@ FILENAME = 'guitars.csv'
 
 
 def main():
+    """my guitars"""
     guitars = get_guitars()
     for guitar in guitars:
         print(guitar)
@@ -14,6 +15,7 @@ def main():
 
 
 def write_guitars(guitars):
+    """write list of guitars to file"""
     out_file = open(FILENAME, 'w')
     for guitar in guitars:
         out_file.write(f"{guitar.name},{guitar.year},{guitar.cost}\n")
